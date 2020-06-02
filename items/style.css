@@ -1,0 +1,114 @@
+table {
+	border-spacing: 2px;
+	width: 100%;
+}
+.menu{
+	color:#FFF;
+	background-color:#600;
+
+}
+.menu:hover{
+	color:#600;
+	background:#930000;
+	text-decoration: underline;
+	
+}
+.menucell {
+	
+	height: 40px;
+	padding-left: 15px;
+	vertical-align: middle;
+	font-size: 15px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+
+body
+{
+	background-image:url(http://users.atw.hu/sasalapja/hatter3.jpg);
+	background-attachment:fixed;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:60% 80%;
+	width:99%;
+	height:98%;
+	background-color:#000;
+	color:#FFF;
+	/*background-color:#900;*/
+}	
+#container {
+	/*background-color:#900;*/
+	position:inherit;
+	width: 1300px;
+	margin: 1 auto;
+}
+#top{
+	
+	/*background-color:#900;*/
+	height:6%;
+	text-align:center;
+	}
+#top, #content,#bottom {
+	
+	/*background-color:#900;*/
+	border:thin #096 ;
+	
+}
+
+#bottom{
+	text-align:right;
+}
+	
+#content, #bottom {
+	/*background-color:#900;*/
+	border:thin #096 ;
+	color:#FFF;
+	padding: 10px;
+	margin: 0px 0;
+}
+/*<div id="box"><h5>Szabályzat [2016.08.14.] — Utolsó módosítás: 2017.09.06 </h5> </div>*/
+#content_left, #content_right {
+	
+	opacity:50%;
+	float:left;
+	border: 1px;
+	padding: 10px;
+	margin: 10px ;
+}
+
+#content_left {
+	width: 180px;
+}
+
+#content_right {
+	background:rgba(4,3,6,0.2);
+	width: 1000px;
+	min-height: 500px;
+	margin-left: 10px;
+	margin-right:0;
+}
+#leftimage
+{
+	
+	/*background-image:url(http://users.atw.hu/sasalapja/fejicon.jpg);*/
+	
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	width:20%;
+	height:100%;
+	
+}
+
+#content_bottom{
+	text-align:right;
+}
+	#fejlec
+{
+	position:right;
+	background-image:url(http://users.atw.hu/sasalapja/fejlec.jpg);
+	background-position:right;
+	background-size:80% 100%;
+	
+	
+}
