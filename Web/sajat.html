@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Warriors Aliance</title>
+    <meta name="viewport" content="width=device-width,  initial-scale=-1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style/Style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="Scripts/script.js"></script>
+</head>
+<body>
+
+    <div class="d-flex flex-column h-100 ">
+
+        <section class="d-flex f-grow-0 justify-content-between align-items-center bg-dark">
+            <div><img class="logo" src="https://gamehag.com//img/games/logo/legends%20of%20honor.png"></div>
+
+            <div>
+                <a class="btn text-dark active" href="#" >Szövetség</a>
+               <!-- <a class="btn text-light" href="index3.html">Specifies</a>-->
+
+            </div>
+
+            <div>
+                <!--<a class="btn btn-sm " href="#" onclick="setHalfVolume()">Némit</a>-->
+                <!--<button class="btn btn-warning bg sm" onclick="Login.logout();">Log Out</button>-->
+            </div>
+
+        </section>
+
+        <section class="login-block d-flex f-grow-1 justify-content-center align-items-center flex-column">
+            <video autoplay loop id="myVideo" onloadstart="this.volume=0">
+                <source src="Style/background.mp4" type="video/mp4" >
+                Your browser does not support HTML5 video.
+            </video>
+            <video autoplay id="myVideo" volume>
+                    <source src="https://code.responsivevoice.org/getvoice.php?t=Üdvözöljük a Varriorsz szövetség veboldalán. &tl=hu-hu&sv=g1&vn=&pitch=0.5&rate=0.5&vol=1&gender=male" type="video/mp4"  > 
+                   Your browser does not support HTML5 video.
+               </video>
+            <script>
+                var vid = document.getElementById("myVideo");
+                function getVolume() { 
+                    alert(vid.volume);
+                } 
+  
+                function setHalfVolume() { 
+                    if(vid.volume>0.3){
+                        vid.volume = vid.volume/2;
+                        alert(vid.volume);
+                    }
+                    else{
+                        setFullVolume();
+                    } 
+                }
+  
+                function setFullVolume() { 
+                    vid.volume = 0 ;
+                } 
+
+                </script>
+       
+            <div class="container" style="background-color:rgba(0,0,0,0.5)">
+                <div class="row" style="background-color:rgba(255,255,255,0.5)">
+                    <div class="col-md-4 login-sec">
+                        <h2 class="text-center">Menu</h2>
+                        <div class="login-sec">
+                            <button class="btn btn-secondary btn-lg btn-block"  data-target="#carouselExampleIndicators" data-slide-to="0"><img src="Style/home-button.png"  height="35px" width="auto"/> Kezdőlap</button>
+                            <button class="btn btn-secondary btn-lg btn-block"  data-target="#carouselExampleIndicators" data-slide-to="1">TEAMSPEAK</button>
+                            <button class="btn btn-secondary btn-lg btn-block"  data-target="#carouselExampleIndicators" data-slide-to="2">Szabályzat</button>
+                            <button class="btn btn-secondary btn-lg btn-block"  data-target="#carouselExampleIndicators" data-slide-to="3">Aktivitás</button>
+                            <button class="btn btn-secondary btn-lg btn-block"  data-target="#carouselExampleIndicators" data-slide-to="4">Várfejlesztés</button>
+                            <button class="btn btn-secondary btn-lg btn-block"  data-target="#carouselExampleIndicators" data-slide-to="5">Támadás-Védés</button>
+                            
+                        </div>
+
+                    </div>
+                    <div class="col-md-8 banner-sec" style="width:120%">
+                        <div id="carouselExampleIndicators" class="carousel slide">
+                            <!--<ol class="carousel-indicators">
+                                <a class="btn text-light" data-target="#carouselExampleIndicators" data-slide-to="1">Empire</a>
+                            </ol>-->
+                            <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                            <img class="img-fluid" src="http://www.war-games.org/medias/war-games-19.jpg" style="min-height:700px"  >
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <div class="banner-text">
+                                                    <h2>Üdvözöllek a Warriors szövetség weboldalán</h2>
+                                                    <div class="scroll " style="width: 150%; background:rgba(0,0,0,0.5); border-radius:10px">
+                                                    <p> A baloldali menüből kiválaszthatod mely témában szeretnéd tudásodat gyarapítani szövetségünk szabályaival kapcsolatosan.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                <div class="carousel-item ">
+                                   
+                                    <div class="carousel-caption d-none d-md-block" style="min-height:700px">
+                                        <div class="banner-text">
+                                            <h2>TeamSpeak használata:</h2>
+                                            <div class="scroll" style="width: 150%; background:rgba(0,0,0,0.5); border-radius:10px">
+                                                <P>Teamspeak 3 használata!</P>
+                                                <p><a style="color:white" href="https://www.teamspeak.com/en/downloads.html#client">Teamspeak letöltés</a></p>
+                                                <p>server: ts3.brl-gamecenter.hu:8810</p>
+                                                <p>szoba: warriors</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+
+                                    <img class="d-block img-fluid" src="https://static.goodgamestudios.com/wp-content/uploads/2014/07/legendsofhonor_home_tablet_1024x550.jpg" style="min-height:700px" alt="First slide">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <div class="banner-text">
+                                            <h2>MNT-k és Szabályzat</h2>
+                                            <div class="scroll" style="width:150%; background-color: rgba(0,0,0,0.5);border-radius:10px">
+                                                    <p>MNT</p>
+                                               <ul>
+                                                   
+                                                   <li>Hóhér</li>
+                                                   <li>Humán hunok</li>
+                                                   <li>Anonym</li>
+                                                </ul>
+                                                <p>Szabályzat</p>
+                                                <p>Aki tudomást szerez arról hogy következő pontokat megszegi valaki, annak kötelessége ezt jelenteni a vezetőség felé. Ha nem teszik az ugyanúgy büntetésben részesül!</p>
+                                                <p>MNT vár támadásért kiosztott szankció</p>
+                                                    <ul>
+                                                       <li>Havonta  1 véletlen támadásért 1 figyelmeztetés</li>
+                                                        
+                                                        <li>Havonta  2 véletlen támadásért  1 napos kitiltás</li>
+                                                        
+                                                        <li>Havonta  3 véletlen támadásért  1 hetes kitiltás</li>
+                                                        
+                                                        <li>Havonta  4 véletlen támadásért  vezetőség személyre szabott döntése</li>                                                                 
+                                                        
+                                                        <li>Hetente 5 véletlen támadásért  5 figyelmeztetés</li>
+                                                        
+                                                        <li>Hetente 6-8 véletlen támadásért  1napos kitiltás</li>
+                                                        
+                                                        <li>Hetente 8-10 véletlen támadásért  1 hetes kitiltás</li>
+                                                        
+                                                        <li>Hetente 10felett való véletlen támadásért  vezetőség személyre szabott döntése
+                                                        (értelem szerűen addig míg nem lesz fejlesztve a szövetségi paktum)</li>
+                                                        
+                                                        <li>Szabályok megszegéséért  kiosztott szankció</li>
+                                                        
+                                                        <li>3 figyelmeztetés után 1 napos  kitiltás</li>
+                                                    </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block img-fluid" src="https://static.goodgamestudios.com/wp-content/uploads/2014/07/legendsofhonor_home_tablet_1024x550.jpg" style="min-height:700px" alt="First slide">
+                                    <!--https://static.pexels.com/photos/497848/pexels-photo-497848.jpeg-->
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <div class="banner-text">
+                                            <h2>Inaktivitás</h2>
+                                            <div class="scroll" style="width:150%; background-color: rgba(0,0,0,0.5);border-radius:10px">
+                                            <h3>Szinttől függően:</h3>
+                                            <ul>
+                                                <li>25 alatt piros jelzés után 5 nap elteltével is ha inaktív azonnali kirakás</li>
+                                                <li>26-30  piros jelzés után 1.5milla becspont alatt azonnali kirakás</li>
+                                                <li>31-35  piros jelzés után 2.0milla becspont alatt azonnali kirakás</li>
+                                                <li>36-45  piros jelzés után 2.5milla becspont alatt azonnali kirakás</li>
+                                                <li>46-70  piros jelzés után 3.0milla becspont alatt azonnali kirakás</li>
+                                                <p>(ha időben jelezve van a távollét akkor ezek nem érvényesek az adott játékosra)</p>
+                                            </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                        <img class="d-block img-fluid" src="https://static.goodgamestudios.com/wp-content/uploads/2014/07/legendsofhonor_home_tablet_1024x550.jpg" style="min-height:700px" alt="First slide">
+                                        <!--https://static.pexels.com/photos/497848/pexels-photo-497848.jpeg-->
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <div class="banner-text">
+                                                <h2>Fejlesztések</h2>
+                                                <div class="scroll" style="width:150%; background-color: rgba(0,0,0,0.5);border-radius:10px">
+                                                    <h3>Vár kiépítése Kötelező fejlesztések</h3>
+                                                    <p>A szintekhez mérten a következő épületek a maximális szintűek legyenek</p>
+                                                    <p>Fontosság szerint:</p>
+                                                    <p>1 Várárok fejlesztése (a csapat reakcióideje miatt. Minél nagyobb legyen az esély hogy a segítség odaérjen időben)</p>
+                                                    <p>2 Tanyák fejlesztése (a védelmi erő maximalizálása)</p>
+                                                    <p>3 Szélmalom fejlesztése (a védelmi erő maximalizálása)</p>
+                                                    <p>A várakban a nyersanyag termelő épületek kifejlesztése nem gazdaságos mivel nagyon minimális mennyiséghez juttat fa, kő, vas, kén. Pár martalóc farmolással be hozod az egész heti termelését 4 nyersanyag termelő épületnek. Ezért a nyersanyag termelő épületek helyett tanyákat fejlesz.(lásd nagyobb szintű váraknál hogyan vannak kifejlesztve)</p>
+                                                    <p>Ha kivannak fejlesztve a nyersanyag termelő épületek le kell bontani őket. Térképen egységes elhelyezkedés kötelező 2perctől nem lehet messzebb senki a vezetőségtől egyik világban sem!!!</p>
+                                                    <p>Szövetségünk raktárja ki lett maxolva. Az a fontos, hogy minél több érmét és minél több drágakövet tudj gyűjteni, ezért mindnképp sokat martizz. Szükség lehet késöbb a támadásoknál, mivel ha költözteted a várat, azt csak 3 naponta 1-szer teheted ingyen. Visszaköltözni már csak drágakőért tudsz.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <div class="carousel-item">
+                                        <img class="d-block img-fluid" src="https://static.goodgamestudios.com/wp-content/uploads/2014/07/legendsofhonor_home_tablet_1024x550.jpg" style="min-height:700px" alt="First slide">
+                                        <!--https://static.pexels.com/photos/497848/pexels-photo-497848.jpeg-->
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <div class="banner-text">
+                                                <h2>Támadás védés</h2>
+                                                <div class="scroll" style="width:150%; background-color: rgba(0,0,0,0.5);border-radius:10px">
+                                                    <h3>Minimum védelmek:</h3> 
+                                                    <ul>
+                                                        <li>25-29: 1.5 milla</li>
+                                                        <li>30-34: 2 milla</li>
+                                                        <li>35-39: 2.5 milla</li>
+                                                        <li>40-44: 3 milla</li>
+                                                        <li>45-49: 4 milla</li>
+                                                        <li>50-54: 5 milla</li>
+                                                        <li>55-59: 6 milla</li>
+                                                        <li>60-64: 7 milla</li>
+                                                        <li>65-70: 8 milla</li>
+                                                    </ul>
+                                                    <p>(figyelembe vesszük a tanyák számát és fejlettségét és adunk időt ezek maximalizálásához e mellett figyelembe vesszük ha támadás érte a várat így ebből adódóan kevesebb a védelem és egyéb okokat)</p>
+                                                    <p>A minimum védelem feletti egységekre szabad kezet kap mindenki (a morál fent tartása miatt).</p>
+                                                    <p> Viszont a mínium védelem kötelező - és ha támadást indítanak felsőbb utasítás nélkül a mínium védelemmel akkor az azonnali szankciót von maga után (a minimum védelemmel a szövetség rendelkezik így van lehetőség akár egy nagyobb nem várt támadást is kivédeni)</p>
+                                                    <p>A minimum védelem feletti egységekre csak akkor van szükség ha szervezett támadást tervezünk . Ha részt tud venni a szervezett támadásban akkor az adott időpontba egész nap nem támadhat(készülni kell maximális egység számmal)</p>
+                                                    <p>Viszont ha nem tud lenni a tervezett időpontba akkor ismét szabad kezet kap aznapra a minimum védelem feletti egységekre.</p>
+                                                    <h3>Támadás esetén követendő szabályok</h3>
+                                                    <p style="color:red">300 ezer alatti védelemmel rendelkező várat tilos ütni!!!</p>
+                                                    <p style="color:yellow">Ha nálad sokkal kisebb szintűt ütsz, sok becsület pontot veszíthetsz.</p>
+                                                    <p>Csoportos támadás esetén hallgass a támadást szervező társadra. Egyéni akció nincs!!! Erősen ajánlott a teamspeak használata. Vár illetve hős támadása esetén 6 hős fér, célszerű előnyben részesíteni a nagyobb támadó erejű hőst. Több hős támadása esetén célszerű az előbb lejáróba betámogatni, hogy a győztes csata után a még folyamatba lévőbe be tudj szállni.</p>
+                                                    <p>Egyéni támadás: olyan ellenfélt válassz, akit tuti le tudsz győzni, ha valami közbejön és segítséget kérsz tájékoztasd a segítségedre siető társadat a bujkáló ellenfél hollétéről.</p>
+    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+        
+        </section>
+    
+        <section class="text-light bg-dark d-flex f-grow-0 justify-content-center">
+            <p>
+                ©Laczkó Sándor 
+                <span id="year">eeee</span>
+                <span id="month">ee</span>
+                <span id="day">ee</span>
+                
+            </p>
+        </section>
+
+    </div>
+    <script>
+        var d = new Date();
+        var y = d.getFullYear();
+        var m = (d.getMonth()+1);
+        var n = d.getDate();
+        document.getElementById("year").innerHTML = y;
+        document.getElementById("month").innerHTML = m;
+        document.getElementById("day").innerHTML = n;
+
+    </script>
+</body>
+</html>
+
+
+
